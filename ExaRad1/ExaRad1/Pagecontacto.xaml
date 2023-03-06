@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExaRad1.Pagecontacto">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name=" txtnombre" Placeholder="Ingrese su nombre" Keyboard="Text"/>
+            <Entry x:Name=" txtapellido" Placeholder="Ingrese su apellido" Keyboard="Text"/>
+            <Entry x:Name=" txtedad" Placeholder="Ingrese su edad" Keyboard="Numeric"/>
+            <Picker Title="Seleccione el pais"
+        TitleColor="Red">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Honduras</x:String>
+                        <x:String>Costa Rica</x:String>
+                        <x:String>Guatemala</x:String>
+                        <x:String>El Salvador</x:String>
+                       
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button x:Name=" btmostrar" Text="Mostrar" Clicked="Btmostrar_clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
